@@ -7,7 +7,7 @@ REST API based on Node.js and MongoDB application for geography quiz.
 
 ## Make a test:
 * curl -X GET http://localhost:4000/api/questions?number=2
-
+``` json
   {
     "_id": "5c36f799a31327c168e74539",
     "question": "Which planet having all the circumstances for the existence of life?",
@@ -33,4 +33,4 @@ REST API based on Node.js and MongoDB application for geography quiz.
     "wieght": 1
   }
 ]
-
+```
