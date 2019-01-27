@@ -8,7 +8,7 @@ const router = require('./routers/api');
 const app = express();
 
 // connect to mongodb geography-db
-mongoose.connect('mongodb://admin:admin@geography-db:27017/geographydb?authSource=admin');
+mongoose.connect("mongodb://admin:admin@geography-db:27017/geographydb?authSource=admin");
 mongoose.Promise = global.Promise;
 
 //set up static files

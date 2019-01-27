@@ -4,4 +4,4 @@ npm-debug.log
 yarn-error.log
 yarn.lock
 swagger.json
-Dockerfile
+Dockerfile.compose
