@@ -22,18 +22,18 @@ app.use('/api', router);
 
 // error handling middleware
 app.use(function(err, req, res) {
-  console.log(err); // to see properties of message in our console
-  res.status(422).send({ error: err.message });
+    console.log(err); // to see properties of message in our console
+    res.status(422).send({ error: err.message });
 });
 
 app.use(function(req, res, next) {
-  res.header("Access-Control-Allow-Origin", "*");
-  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
-  next();
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+    next();
 });
 
 
 // listen for requests
 app.listen(process.env.port || 4000, function() {
-  console.log('Server started and wait requests');
+    console.log('Server started and wait requests');
 });

@@ -8,6 +8,12 @@ const serverError = () => {
 };
 
 // get a list of questions from the db
+router.get('/questions/hw', (req, res) => {
+  res.json("<h1>Hello world!!</h1>");
+});
+
+
+// get a list of questions from the db
 router.get('/questions/all', (req, res) => {
   Question.find()
     .then((questions) => {
